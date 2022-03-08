@@ -1,5 +1,5 @@
 ############################
-# Python version 3.8
+# Version: 1.0
 # @author me@mad4n7.com
 ############################
 
@@ -19,7 +19,7 @@ def getModifiedPath(originalPath):
     result = ''
     file_name = originalPath.split('.')
     for c in file_name[0]:
-        if c in VALID_CHARACTERS or c.isalpha():
+        if c in VALID_CHARACTERS or c.isalpha() or c.isnumeric():
             result += c
 
     result += '.' + file_name[1]
